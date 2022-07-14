@@ -7,7 +7,7 @@ const port = 3000;
 var morgan = require('morgan')
  
 // create "middleware"
-//app.use(morgan('dev'))
+app.use(morgan('dev'))
 
 app.set('view engine', 'ejs')
 
