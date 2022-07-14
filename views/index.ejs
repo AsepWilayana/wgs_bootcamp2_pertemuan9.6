@@ -1,0 +1,15 @@
+
+    <%# const nama = "Asep Wilayana"; %>
+    <h1>web server node js</h1>
+    <p>welcome to my page <%= nama %></p>
+
+    <h1>contact list</h1>
+        <% if (cont < 1)  {%> 
+            <p>data kosong</p>
+        <% } else {%>
+            <% for (let index = 0; index < cont.length; index++) { %>
+                <p>nama : <%=cont[index].name %></p>
+                <p>email : <%=cont[index].email %></p>
+                <br/>
+            <% } %>
+        <%}%>  
